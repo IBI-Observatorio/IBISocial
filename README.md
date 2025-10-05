@@ -1,26 +1,35 @@
-# IBISocial
+# Pesquisa Porto de Santos - Landing Page de Alta Performance
 
-Uma plataforma social moderna e intuitiva para conectar pessoas e facilitar a comunicação.
+Uma landing page otimizada para conversão, moderna e altamente envolvente, focada em uma pesquisa sobre profissões no Porto de Santos para adolescentes de 13 a 17 anos.
 
-## 🚀 Características
+## 🚀 Características da Landing Page
 
-- **Interface Moderna**: Design responsivo e intuitivo
-- **Chat em Tempo Real**: Sistema de mensagens avançado
-- **Compartilhamento**: Compartilhe conteúdo e experiências
-- **Comunidades**: Participe de grupos temáticos
-- **Analytics**: Acompanhe métricas de engajamento
-- **Responsivo**: Funciona em desktop, tablet e mobile
+- **Design Moderno**: Interface vibrante e dinâmica com gradientes e microinterações
+- **Mobile-First**: Otimizada para dispositivos móveis com experiência fluida
+- **Alta Performance**: Core Web Vitals otimizados, carregamento rápido
+- **Acessibilidade**: WCAG AA compliant, navegação por teclado
+- **SEO Otimizado**: Meta tags, schema markup, Open Graph
+- **Conversão Focada**: CTAs estratégicos, barra de progresso, FAQ
+- **Animações Suaves**: AOS (Animate On Scroll), contadores animados
+- **LGPD Compliant**: Política de privacidade, termos de uso
 
 ## 📁 Estrutura do Projeto
 
 ```
 IBISocial/
-├── index.html          # Página principal
+├── landing.html        # Landing page principal
+├── index.html          # Questionário interativo
+├── privacy-policy.html # Política de privacidade
+├── terms.html          # Termos de uso
 ├── css/
-│   └── style.css       # Estilos CSS
+│   ├── landing.css     # Estilos da landing page
+│   └── style.css       # Estilos do questionário
 ├── js/
-│   └── main.js         # JavaScript principal
+│   ├── landing.js      # JavaScript da landing page
+│   └── main.js         # JavaScript do questionário
 ├── assets/             # Recursos estáticos
+│   ├── logo.svg        # Logo principal
+│   └── logo-white.svg  # Logo para footer
 ├── images/             # Imagens do projeto
 ├── src/                # Código fonte adicional
 ├── package.json        # Configurações do projeto
@@ -29,11 +38,13 @@ IBISocial/
 
 ## 🛠️ Tecnologias Utilizadas
 
-- **HTML5**: Estrutura semântica
-- **CSS3**: Estilos modernos com Flexbox e Grid
-- **JavaScript (ES6+)**: Funcionalidades interativas
-- **Font Awesome**: Ícones
-- **Responsive Design**: Mobile-first
+- **HTML5**: Estrutura semântica com landmarks e ARIA
+- **CSS3**: Variáveis CSS, Grid, Flexbox, animações
+- **JavaScript (ES6+)**: Intersection Observer, performance otimizada
+- **AOS**: Animate On Scroll library
+- **Font Awesome**: Ícones modernos
+- **Google Fonts**: Inter font family
+- **Responsive Design**: Mobile-first, breakpoints adaptativos
 
 ## 🚀 Como Executar
 
@@ -65,30 +76,39 @@ Ou para desenvolvimento com live-reload:
 npm run dev
 ```
 
-4. Abra o navegador em `http://localhost:3000`
+4. Abra o navegador em `http://localhost:3000/landing.html`
 
-## 📱 Funcionalidades
+## 📱 Funcionalidades da Landing Page
 
-### Navegação
-- Menu responsivo com hambúrguer para mobile
-- Scroll suave entre seções
-- Navegação fixa no topo
+### Seções Principais
+- **Hero**: Vídeo de fundo, CTA principal, scroll indicator
+- **Why Matters**: Benefícios da participação com cards animados
+- **What to Expect**: Expectativas da pesquisa com ícones
+- **Porto Facts**: Contadores animados com dados do porto
+- **Final CTA**: Chamada final para ação
+- **FAQ**: Accordion interativo
+- **Survey**: Questionário embarcado com barra de progresso
 
-### Formulário de Contato
-- Validação de campos em tempo real
-- Sistema de notificações
-- Design responsivo
+### Performance
+- Lazy loading de imagens e vídeos
+- Preload de recursos críticos
+- Otimização de animações
+- Service Worker para cache
+- Core Web Vitals otimizados
 
-### Animações
-- Efeitos de entrada para cards
-- Contadores animados
-- Efeito parallax no hero
-- Transições suaves
+### Acessibilidade
+- Navegação por teclado
+- ARIA labels e landmarks
+- Contraste adequado (WCAG AA)
+- Skip links
+- Suporte a screen readers
 
-### Responsividade
-- Design mobile-first
-- Breakpoints para tablet e desktop
-- Menu hambúrguer para mobile
+### SEO
+- Meta tags otimizadas
+- Open Graph e Twitter Cards
+- Schema.org markup
+- URLs semânticas
+- Sitemap ready
 
 ## 🎨 Personalização
 
@@ -173,3 +193,4 @@ Este projeto está sob a licença MIT. Veja o arquivo `LICENSE` para mais detalh
 ---
 
 **IBISocial** - Conectando pessoas através da tecnologia 🚀
+
