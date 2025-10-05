@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa Porto de Santos - Percepção e Interesse Profissional</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h1>🚢 Pesquisa Porto Santos</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#survey" class="nav-link">Questionário</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contato</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Pesquisa de Percepção e Interesse Profissional</h1>
+                    <p class="hero-subtitle">Porto de Santos - Sua opinião é fundamental para o futuro! 🚢</p>
+                    <div class="hero-buttons">
+                        <a href="#survey" class="btn btn-primary">Participar da Pesquisa</a>
+                        <a href="#about" class="btn btn-secondary">Saiba Mais</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="placeholder-image">
+                        <i class="fas fa-ship"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="survey" class="survey-section">
+            <div class="container">
+                <h2 class="section-title">Questionário de Pesquisa</h2>
+                <div class="survey-intro">
+                    <p class="survey-welcome">Olá! Que legal ter você aqui! 🚀 A gente quer muito saber sua opinião sobre o Porto de Santos e sobre o seu futuro. Não tem resposta certa ou errada, o importante é a sua sinceridade! Suas respostas são super secretas e anônimas, e vão nos ajudar a criar atividades e conteúdos incríveis na escola, feitos sob medida para vocês. Sua voz é muito importante! Vamos lá?</p>
+                </div>
+                
+                <form id="survey-form" class="survey-form">
+                    <!-- Parte 1: Conhecimento Prévio -->
+                    <div class="form-section">
+                        <h3 class="section-subtitle">Parte 1: Conhecimento Prévio e Percepção do Porto (O que você já sabe?)</h3>
+                        
+                        <div class="question-group">
+                            <label class="question-label">1. Quando você ouve falar em "Porto de Santos", qual é a primeira coisa que vem à sua mente? (Pode marcar mais de uma opção)</label>
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="q1[]" value="navios">
+                                    <span class="checkmark"></span>
+                                    Navios gigantes 🚢 (aqueles que parecem cidades flutuantes!)
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="q1[]" value="conteineres">
+                                    <span class="checkmark"></span>
+                                    Contêineres de carga 📦 (aquelas caixas coloridas empilhadas)
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="q1[]" value="importacao">
+                                    <span class="checkmark"></span>
+                                    Exportação e importação 🌍 (produtos que o Brasil vende para fora e compra de outros países)
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="q1[]" value="obras">
+                                    <span class="checkmark"></span>
+                                    Obras e construções 🏗️ (guindastes, cais, muita estrutura)
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="q1[]" value="trabalhadores">
+                                    <span class="checkmark"></span>
+                                    Muita gente trabalhando 🧑‍💼 (marinheiros, caminhoneiros, operadores de máquinas, etc.)
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="q1[]" value="poluicao">
+                                    <span class="checkmark"></span>
+                                    Poluição / Impacto no meio ambiente 🗑️
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="q1[]" value="historia">
+                                    <span class="checkmark"></span>
+                                    História da cidade de Santos 🏛️ (como o porto ajudou a cidade a crescer)
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="q1[]" value="empregos">
+                                    <span class="checkmark"></span>
+                                    Geração de empregos e dinheiro para a região 💰
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="q1[]" value="nao_sei">
+                                    <span class="checkmark"></span>
+                                    Não sei / Nunca pensei nisso 🤔
+                                </label>
+                                <div class="other-option">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="q1[]" value="outro" id="q1-outro">
+                                        <span class="checkmark"></span>
+                                        Outro (qual?):
+                                    </label>
+                                    <input type="text" name="q1_outro_texto" placeholder="Digite aqui..." class="other-input" disabled>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="question-group">
+                            <label class="question-label">2. Você já visitou ou passou perto do Porto de Santos?</label>
+                            <div class="radio-group">
+                                <label class="radio-label">
+                                    <input type="radio" name="q2" value="visitei">
+                                    <span class="radio-mark"></span>
+                                    Sim, visitei (em passeio, com a escola, em um evento, etc.)
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="q2" value="passei_perto">
+                                    <span class="radio-mark"></span>
+                                    Sim, passei por perto (de carro, ônibus, bicicleta, etc., mas sem entrar)
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="q2" value="nunca">
+                                    <span class="radio-mark"></span>
+                                    Não, nunca passei por lá.
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="question-group">
+                            <label class="question-label">3. De 1 a 5, o quanto você acha que o Porto de Santos é importante para a nossa cidade e para o Brasil?</label>
+                            <div class="rating-group">
+                                <label class="rating-label">
+                                    <input type="radio" name="q3" value="1">
+                                    <span class="rating-mark">1</span>
+                                    <small>Nada importante</small>
+                                </label>
+                                <label class="rating-label">
+                                    <input type="radio" name="q3" value="2">
+                                    <span class="rating-mark">2</span>
+                                    <small>Pouco importante</small>
+                                </label>
+                                <label class="rating-label">
+                                    <input type="radio" name="q3" value="3">
+                                    <span class="rating-mark">3</span>
+                                    <small>Mais ou menos importante</small>
+                                </label>
+                                <label class="rating-label">
+                                    <input type="radio" name="q3" value="4">
+                                    <span class="rating-mark">4</span>
+                                    <small>Muito importante</small>
+                                </label>
+                                <label class="rating-label">
+                                    <input type="radio" name="q3" value="5">
+                                    <span class="rating-mark">5</span>
+                                    <small>Extremamente importante!</small>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="question-group">
+                            <label class="question-label">4. Você consegue citar algum produto que, na sua opinião, passa pelo Porto de Santos para chegar até a sua casa ou ser enviado para fora?</label>
+                            <textarea name="q4" placeholder="Digite aqui (ex: carro, fruta, eletrônico, café, soja, peças de computador)..." class="text-input"></textarea>
+                            <label class="checkbox-label small-checkbox">
+                                <input type="checkbox" name="q4_nao_consegue">
+                                <span class="checkmark"></span>
+                                Não consigo citar nenhum.
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Botão de continuar para próxima parte -->
+                    <div class="form-navigation">
+                        <button type="button" class="btn btn-primary" onclick="showNextSection('part2')">Continuar para Parte 2</button>
+                    </div>
+
+                    <!-- Parte 2: Interesse em Carreira -->
+                    <div class="form-section" id="part2" style="display: none;">
+                        <h3 class="section-subtitle">Parte 2: Interesse em Carreira e Oportunidades (E o seu futuro?)</h3>
+                        
+                        <div class="question-group">
+                            <label class="question-label">5. Quando pensa em "trabalhar", quais são as 3 coisas que mais te chamam a atenção em um emprego? (Escolha as 3 mais importantes para você)</label>
+                            <div class="checkbox-group limited-choices" data-max="3">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="q5[]" value="salario">
+                                    <span class="checkmark"></span>
+                                    Um bom salário e benefícios 💰 (para ter uma vida confortável)
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="q5[]" value="gostar">
+                                    <span class="checkmark"></span>
+                                    Fazer algo que eu goste e me dê prazer 🥰 (trabalhar com paixão)
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="q5[]" value="tecnologia">
+                                    <span class="checkmark"></span>
+                                    Trabalhar com tecnologia e inovações 💻 (estar sempre atualizado)
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="q5[]" value="ajudar">
+                                    <span class="checkmark"></span>
+                                    Ajudar as pessoas ou o meio ambiente 💖 (ter um impacto positivo)
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="q5[]" value="seguranca">
+                                    <span class="checkmark"></span>
+                                    Ter segurança no emprego 🛡️ (não ser mandado embora fácil, ter estabilidade)
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="q5[]" value="viajar">
+                                    <span class="checkmark"></span>
+                                    Poder viajar ou conhecer lugares novos ✈️ (explorar o mundo)
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="q5[]" value="equipe">
+                                    <span class="checkmark"></span>
+                                    Trabalhar em equipe e conhecer muita gente legal 🤝 (colaborar e fazer amigos)
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="q5[]" value="lideranca">
+                                    <span class="checkmark"></span>
+                                    Ter um cargo de chefia ou liderança 👑 (tomar decisões e guiar pessoas)
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="q5[]" value="liberdade">
+                                    <span class="checkmark"></span>
+                                    Não trabalhar em escritório, ter mais liberdade e flexibilidade 🏞️
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="q5[]" value="equilibrio">
+                                    <span class="checkmark"></span>
+                                    Ter um bom equilíbrio entre vida pessoal e profissional 🧘‍♀️ (qualidade de vida)
+                                </label>
+                                <div class="other-option">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="q5[]" value="outro" id="q5-outro">
+                                        <span class="checkmark"></span>
+                                        Outro (qual?):
+                                    </label>
+                                    <input type="text" name="q5_outro_texto" placeholder="Digite aqui..." class="other-input" disabled>
+                                </div>
+                            </div>
+                            <small class="choice-limit">Você pode escolher até 3 opções</small>
+                        </div>
+
+                        <div class="question-group">
+                            <label class="question-label">6. Você já pensou em trabalhar em um lugar como o Porto de Santos no futuro?</label>
+                            <div class="radio-group">
+                                <label class="radio-label">
+                                    <input type="radio" name="q6" value="ja_pensei">
+                                    <span class="radio-mark"></span>
+                                    Sim, já pensei e acho interessante.
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="q6" value="nunca_pensei">
+                                    <span class="radio-mark"></span>
+                                    Não, nunca tinha pensado nisso.
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="q6" value="talvez">
+                                    <span class="radio-mark"></span>
+                                    Talvez, mas não sei o que se faz lá, nem quais profissões existem.
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="q6" value="nao_interessa">
+                                    <span class="radio-mark"></span>
+                                    Não, não me interessa.
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="question-group">
+                            <label class="question-label">7. De 1 a 5, o quanto você se sente informado(a) sobre as profissões que existem no Porto de Santos?</label>
+                            <div class="rating-group">
+                                <label class="rating-label">
+                                    <input type="radio" name="q7" value="1">
+                                    <span class="rating-mark">1</span>
+                                    <small>Não sei de nada</small>
+                                </label>
+                                <label class="rating-label">
+                                    <input type="radio" name="q7" value="2">
+                                    <span class="rating-mark">2</span>
+                                    <small>Sei muito pouco</small>
+                                </label>
+                                <label class="rating-label">
+                                    <input type="radio" name="q7" value="3">
+                                    <span class="rating-mark">3</span>
+                                    <small>Sei um pouco</small>
+                                </label>
+                                <label class="rating-label">
+                                    <input type="radio" name="q7" value="4">
+                                    <span class="rating-mark">4</span>
+                                    <small>Sei bastante</small>
+                                </label>
+                                <label class="rating-label">
+                                    <input type="radio" name="q7" value="5">
+                                    <span class="rating-mark">5</span>
+                                    <small>Sei muito sobre o assunto</small>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="question-group">
+                            <label class="question-label">8. Imagine que o Porto de Santos é uma cidade gigante, cheia de oportunidades. Qual tipo de área profissional você acha que mais combinaria com você? (Pode marcar até 2 opções que mais te interessam)</label>
+                            <div class="checkbox-group limited-choices" data-max="2">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="q8[]" value="logistica">
+                                    <span class="checkmark"></span>
+                                    O Mestre dos Navios: Trabalha com a chegada e saída dos barcos, a movimentação e organização das cargas nos pátios e armazéns. (Área: Logística e Operações Portuárias)
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="q8[]" value="engenharia">
+                                    <span class="checkmark"></span>
+                                    O Engenheiro do Futuro: Cria, planeja e cuida das construções, máquinas, equipamentos e tecnologias que fazem o porto funcionar. (Área: Engenharia e Manutenção)
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="q8[]" value="meio_ambiente">
+                                    <span class="checkmark"></span>
+                                    O Guardião da Natureza: Garante que o porto seja amigo do meio ambiente, buscando soluções sustentáveis e controlando impactos. (Área: Meio Ambiente e Sustentabilidade)
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="q8[]" value="tecnologia">
+                                    <span class="checkmark"></span>
+                                    O Hacker do Bem: Usa computadores, programas, inteligência artificial e robôs para deixar tudo mais rápido, seguro e eficiente no porto. (Área: Tecnologia da Informação e Automação)
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="q8[]" value="seguranca">
+                                    <span class="checkmark"></span>
+                                    O Protetor da Equipe: Cuida da segurança e saúde de todos que trabalham no porto, prevenindo acidentes e garantindo um ambiente saudável. (Área: Segurança do Trabalho e Saúde Ocupacional)
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="q8[]" value="comercio">
+                                    <span class="checkmark"></span>
+                                    O Negociador Global: Lida com a compra e venda de produtos com outros países, organiza a documentação, impostos e regras do comércio internacional. (Área: Comércio Exterior e Finanças)
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="q8[]" value="rh">
+                                    <span class="checkmark"></span>
+                                    O Gerente de Pessoas: Ajuda a contratar, treinar, desenvolver e cuidar dos funcionários do porto, garantindo um bom ambiente de trabalho. (Área: Recursos Humanos e Desenvolvimento de Pessoas)
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="q8[]" value="direito">
+                                    <span class="checkmark"></span>
+                                    O Especialista em Leis: Garante que todas as regras, leis e regulamentações do porto sejam seguidas, evitando problemas legais. (Área: Direito e Regulação)
+                                </label>
+                                <div class="other-option">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="q8[]" value="outro" id="q8-outro">
+                                        <span class="checkmark"></span>
+                                        Outro (qual?):
+                                    </label>
+                                    <input type="text" name="q8_outro_texto" placeholder="Digite aqui..." class="other-input" disabled>
+                                </div>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="q8[]" value="nenhuma">
+                                    <span class="checkmark"></span>
+                                    Nenhuma dessas me interessa no porto.
+                                </label>
+                            </div>
+                            <small class="choice-limit">Você pode escolher até 2 opções</small>
+                        </div>
+
+                        <div class="question-group">
+                            <label class="question-label">9. Na sua opinião, quais habilidades ou "superpoderes" um jovem precisa ter para conseguir um bom emprego no Porto de Santos? (Pode marcar mais de uma opção)</label>
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="q9[]" value="matematica">
+                                    <span class="checkmark"></span>
+                                    Ser bom em matemática e cálculos 🔢 (para lidar com medidas, finanças, logística)
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="q9[]" value="tecnologia">
+                                    <span class="checkmark"></span>
+                                    Dominar a tecnologia e informática 💻 (saber usar softwares, internet, talvez até programar)
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="q9[]" value="idiomas">
+                                    <span class="checkmark"></span>
+                                    Falar outros idiomas 🗣️ (inglês, espanhol - para se comunicar com pessoas do mundo todo)
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="q9[]" value="organizacao">
+                                    <span class="checkmark"></span>
+                                    Ser organizado e planejado 📝 (para gerenciar tarefas e prazos)
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="q9[]" value="equipe">
+                                    <span class="checkmark"></span>
+                                    Gostar de trabalhar em equipe 🤝 (colaborar e se comunicar bem com os colegas)
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="q9[]" value="criatividade">
+                                    <span class="checkmark"></span>
+                                    Ter criatividade e resolver problemas 💡 (encontrar soluções para desafios inesperados)
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="q9[]" value="responsabilidade">
+                                    <span class="checkmark"></span>
+                                    Ser responsável e pontual ⏰ (cumprir horários e compromissos)
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="q9[]" value="aprender">
+                                    <span class="checkmark"></span>
+                                    Ter facilidade para aprender coisas novas 🧠 (o mundo e a tecnologia mudam rápido!)
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="q9[]" value="proatividade">
+                                    <span class="checkmark"></span>
+                                    Ter proatividade e iniciativa ✨ (não esperar mandarem, fazer acontecer)
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="q9[]" value="forca">
+                                    <span class="checkmark"></span>
+                                    Ter força física 💪 (para algumas funções que exigem esforço)
+                                </label>
+                                <div class="other-option">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="q9[]" value="outro" id="q9-outro">
+                                        <span class="checkmark"></span>
+                                        Outra (qual?):
+                                    </label>
+                                    <input type="text" name="q9_outro_texto" placeholder="Digite aqui..." class="other-input" disabled>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Botão para parte final -->
+                    <div class="form-navigation" id="nav-part2" style="display: none;">
+                        <button type="button" class="btn btn-primary" onclick="showNextSection('part3')">Continuar para Parte 3</button>
+                    </div>
+
+                    <!-- Parte 3: Necessidades de Treinamento -->
+                    <div class="form-section" id="part3" style="display: none;">
+                        <h3 class="section-subtitle">Parte 3: Necessidades de Treinamento e Expectativas (O que a escola pode fazer por você?)</h3>
+                        
+                        <div class="question-group">
+                            <label class="question-label">10. Se a escola oferecesse atividades ou aulas especiais sobre o Porto de Santos e as carreiras lá, o que mais te chamaria a atenção? (Pode marcar até 3 opções)</label>
+                            <div class="checkbox-group limited-choices" data-max="3">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="q10[]" value="palestras">
+                                    <span class="checkmark"></span>
+                                    Palestras com profissionais que trabalham no Porto 🎤 (ex: "um dia na vida de um [nome da profissão]", contando suas experiências)
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="q10[]" value="visitas">
+                                    <span class="checkmark"></span>
+                                    Visitas guiadas ao Porto de Santos 🚌 (para ver de perto como funciona, os navios, os equipamentos)
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="q10[]" value="oficinas">
+                                    <span class="checkmark"></span>
+                                    Oficinas e projetos práticos 🛠️ (ex: simular a carga de um navio, criar um mini-porto, desenvolver uma solução tecnológica para o porto)
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="q10[]" value="cursos">
+                                    <span class="checkmark"></span>
+                                    Cursos rápidos sobre habilidades que o Porto precisa 🎓 (ex: informática básica, inglês para negócios, noções de logística, segurança)
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="q10[]" value="mentoria">
+                                    <span class="checkmark"></span>
+                                    Mentoria 🧑‍🏫 (alguém do Porto te orientando sobre a carreira, tirando dúvidas e dando conselhos)
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="q10[]" value="jogos">
+                                    <span class="checkmark"></span>
+                                    Jogos e competições sobre o tema portuário 🎮 (quiz, desafios de lógica, simulações)
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="q10[]" value="online">
+                                    <span class="checkmark"></span>
+                                    Conteúdo online 🌐 (vídeos, e-books interativos, podcasts) sobre o Porto e as profissões
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="q10[]" value="feiras">
+                                    <span class="checkmark"></span>
+                                    Feiras de profissões com foco no setor portuário 🎪 (com estandes e demonstrações)
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="q10[]" value="nao_interessa">
+                                    <span class="checkmark"></span>
+                                    Não tenho interesse em nenhuma dessas atividades sobre o Porto.
+                                </label>
+                                <div class="other-option">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="q10[]" value="outro" id="q10-outro">
+                                        <span class="checkmark"></span>
+                                        Outra ideia (qual?):
+                                    </label>
+                                    <input type="text" name="q10_outro_texto" placeholder="Digite aqui..." class="other-input" disabled>
+                                </div>
+                            </div>
+                            <small class="choice-limit">Você pode escolher até 3 opções</small>
+                        </div>
+
+                        <div class="question-group">
+                            <label class="question-label">11. Qual é a maior dúvida que você tem hoje sobre o seu futuro profissional?</label>
+                            <div class="radio-group">
+                                <label class="radio-label">
+                                    <input type="radio" name="q11" value="nao_sei_profissao">
+                                    <span class="radio-mark"></span>
+                                    Não sei qual profissão seguir, tenho muitas opções ou nenhuma.
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="q11" value="medo_emprego">
+                                    <span class="radio-mark"></span>
+                                    Tenho medo de não conseguir um bom emprego ou de não ser bem-sucedido.
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="q11" value="nao_sei_cursos">
+                                    <span class="radio-mark"></span>
+                                    Não sei quais cursos, faculdade ou caminhos de estudo devo seguir.
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="q11" value="nao_sei_feliz">
+                                    <span class="radio-mark"></span>
+                                    Não sei se serei feliz com minha escolha de carreira, se vou gostar do dia a dia.
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="q11" value="nao_sei_pesquisar">
+                                    <span class="radio-mark"></span>
+                                    Não sei por onde começar a pesquisar sobre profissões e o mercado de trabalho.
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="q11" value="conciliar_interesses">
+                                    <span class="radio-mark"></span>
+                                    Como conciliar meus interesses e paixões com as oportunidades que o mercado oferece?
+                                </label>
+                                <div class="other-option">
+                                    <label class="radio-label">
+                                        <input type="radio" name="q11" value="outro" id="q11-outro">
+                                        <span class="radio-mark"></span>
+                                        Outra dúvida (qual?):
+                                    </label>
+                                    <input type="text" name="q11_outro_texto" placeholder="Digite aqui..." class="other-input" disabled>
+                                </div>
+                                <label class="radio-label">
+                                    <input type="radio" name="q11" value="nao_duvidas">
+                                    <span class="radio-mark"></span>
+                                    Não tenho grandes dúvidas no momento.
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="question-group">
+                            <label class="question-label">12. Para finalizar, deixe aqui qualquer ideia, sugestão ou comentário sobre o Porto de Santos, carreiras ou o que a escola poderia fazer para te ajudar a pensar no seu futuro! Sua opinião é muito valiosa!</label>
+                            <textarea name="q12" placeholder="Digite suas ideias, sugestões ou comentários aqui..." class="text-input large-textarea"></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Botões finais -->
+                    <div class="form-navigation" id="nav-part3" style="display: none;">
+                        <button type="button" class="btn btn-secondary" onclick="showPreviousSection('part2')">Voltar</button>
+                        <button type="submit" class="btn btn-primary">Enviar Pesquisa</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2>Sobre a Pesquisa</h2>
+                        <p>Esta pesquisa tem como objetivo levantar o conhecimento e o nível de interesse de pré-adolescentes e adolescentes (13 a 17 anos) de escolas do município de Santos sobre o Porto de Santos e suas oportunidades de carreira.</p>
+                        <p>Os resultados subsidiarão a criação e o aprimoramento de programas de capacitação, orientação profissional e iniciativas educacionais alinhados às demandas futuras do mercado de trabalho portuário.</p>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>13-17</h3>
+                            <p>Faixa Etária</p>
+                        </div>
+                        <div class="stat">
+                            <h3>8º-3º</h3>
+                            <p>Séries Escolares</p>
+                        </div>
+                        <div class="stat">
+                            <h3>Santos</h3>
+                            <p>Município</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">Entre em Contato</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <p>pesquisa@portodesantos.edu.br</p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <p>+55 (13) 3227-0000</p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>Santos, SP - Brasil</p>
+                        </div>
+                    </div>
+                    <form class="contact-form">
+                        <input type="text" placeholder="Seu Nome" required>
+                        <input type="email" placeholder="Seu Email" required>
+                        <textarea placeholder="Sua Mensagem" rows="5" required></textarea>
+                        <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>🚢 Pesquisa Porto Santos</h3>
+                    <p>Conectando jovens ao futuro portuário.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#survey">Questionário</a></li>
+                        <li><a href="#about">Sobre</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Redes Sociais</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Pesquisa Porto Santos. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
