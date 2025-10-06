@@ -38,8 +38,8 @@ function initSmoothScrolling() {
             const target = document.querySelector(this.getAttribute('href'));
             
             if (target) {
-                const headerHeight = document.querySelector('.header').offsetHeight;
-                const targetPosition = target.offsetTop - headerHeight;
+                const headerHeight = 80; // Altura fixa do header
+                const targetPosition = target.offsetTop - headerHeight - 20; // 20px de margem extra
                 
                 window.scrollTo({
                     top: targetPosition,
